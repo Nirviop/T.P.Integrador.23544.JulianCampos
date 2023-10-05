@@ -1,0 +1,212 @@
+/* NAV */
+#nav{
+  background-color: #353a40;
+}
+
+h2{
+    color: #fffeff;
+}
+
+.menu{
+  justify-content: flex-end; text-align: center;
+}
+
+li{
+  font-size: 1.5em;
+}
+
+@media (max-width: 1288px) {
+  li {
+      font-size: 1.2em;
+  }
+}
+@media (max-width: 1108px) {
+  li {
+      font-size: 1em;
+  }}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #fffeff;
+}
+
+.nav-link {
+  color: #999ca1;
+}
+
+#tickets-nav {
+  color: #27a746;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48; 
+}
+
+/* Seccion Conf Bs As */
+.section {
+  --opacidad-negro: 0.5;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)))
+}
+
+#h1_section{
+  text-align: right;
+}
+
+.boton1{
+  font-size: 1.6em;
+}
+
+.boton2{
+  font-size: 1.6em;
+  background-color: #29a744;
+}
+
+.boton3{
+  font-size: 1em;
+}
+
+.boton4{
+  font-size: 1em;
+  background-color: #29a744;
+}
+
+div.carousel-inner div.carousel-item::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #1717178c;
+  content: "";
+}
+
+.d-block{
+  width: 800px;
+  height: 800px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  width: 41%;
+  position: absolute;
+  top: 30%;
+  right: 9%;
+  left: 49%;
+  color: white;
+  padding: 10px;
+}
+
+#carousel-centrado{
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  left: 0%;
+}
+
+#carousel-centrado p{
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .carousel-caption {
+    width: 41%;
+    position: absolute;
+    top: 10%;
+    right: 9%;
+    left: 49%;
+  } }
+
+.carousel-caption p{
+  text-align: right; 
+  font-size: 1.5em
+}
+
+/*Articulo los Oradores */
+
+#div_titulo{
+  text-align: center;
+}
+#div_titulo p{
+  font-size:1em;
+}
+
+.javascript{
+  padding: 0.5em;
+  color: black;
+}
+
+.react{
+  padding: 0.5em;
+  background: #17a2b7;
+}
+
+.card-text{
+  font-size: 0.8em;
+}
+
+.negocios_startups{
+  padding: 0.5em;
+}
+
+/* Bs As Octubre */
+.imagen_2 {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.texto{
+ color: white;
+ background-color: #353a40;
+}
+
+/* Formulario */
+.div_form{
+  text-align: center;
+}
+
+#p1{
+  font-size: 1em;
+}
+
+#p2{
+  font-size:1.3em;
+}
+
+.boton_form{
+  font-size: 2em;
+  background-color: #96c93e;
+  color: white;
+}
+
+.boton_form:hover{
+  background-color: black;
+  color: white;
+}
+
+/* Footer */
+.footer{
+  background: linear-gradient(to right, #1c3949, #1d4f6a);
+}
+
+.footer_div{
+  color: aliceblue;
+}
+
+.footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 350px) {
+footer a{
+      font-size: 0.7em;
+  }
+}
+
+
