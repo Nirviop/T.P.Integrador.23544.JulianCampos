@@ -1,10 +1,27 @@
-/* NAV */
+/* NAVEGADOR */
 #nav{
   background-color: #353a40;
 }
 
 h2{
     color: #fffeff;
+}
+
+#navDiv h2{
+  display: inline-block;
+}
+
+@media (max-width: 364px) {
+  #navDiv h2 {
+    display: none;
+  }
+  #navDiv{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #navDiv a{
+    margin-right: 0px;
+  }
 }
 
 .menu{
@@ -46,7 +63,7 @@ li{
   'opsz' 48; 
 }
 
-/* Seccion Conf Bs As */
+/* Seccion Conf Buenoss Airess */
 .section {
   --opacidad-negro: 0.5;
   background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)))
@@ -163,6 +180,12 @@ div.carousel-inner div.carousel-item::before {
 .texto{
  color: white;
  background-color: #353a40;
+}
+
+@media (max-width: 364px) {
+.texto p span{
+display: none;
+} 
 }
 
 /* Formulario */
