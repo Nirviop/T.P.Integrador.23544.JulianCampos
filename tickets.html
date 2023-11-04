@@ -1,0 +1,159 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet" 
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-around" id="nav">
+        <div class="container-fluid d-flex justify-content-around" id="navDiv">
+          <a class="navbar-brand" href="#nav">
+            <img src="codoacodo.png" alt="Logo" width="150vw" class="d-inline-block">
+            <h2>Conf Bs As</h2>
+          </a>
+          <button class="navbar-toggler bg-light rounded-circle"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="material-symbols-outlined">
+              output_circle
+            </span>
+          </button>
+          <div class="d-flex flex-row-reverse">
+            <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="true" href="#carouselExampleRide">La conferencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#oradores">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#lugarFecha">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#convierteOrador">Conviérte en orador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tickets-nav" href="#">Comprar tickets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--Tarjetas-->
+      <div class="container-fluid">
+        <div class="row justify-content-center mt-5 text-center">
+          <div class="card border-success mb-3 ms-1 me-1 col-2" id="estudiante" data-categoria="Estudiante" onclick="seleccionarCategoria('Estudiante', this)">
+            <div class="bg-transparent fs-4 mt-3 mb-3">Estudiante</div>
+            <div class="text-success">
+              <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
+              <p class="card-text fs-5 mt-3 mb-3">80%</p>
+            </div>
+            <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
+          </div>
+          <div class="card border-success mb-3 ms-1 me-1 col-2"id="trainee" data-categoria="Trainee" onclick="seleccionarCategoria('Trainee', this)" >
+            <div class="bg-transparent fs-4 mt-3 mb-3">Trainee</div>
+            <div class="text-success">
+              <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
+              <p class="card-text fs-5 mt-3 mb-3">50%</p>
+            </div>
+            <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
+          </div>
+          <div class="card border-success mb-3 ms-1 me-1 col-2" id="junior" data-categoria="Junior" onclick="seleccionarCategoria('Junior', this)">
+            <div class="bg-transparent fs-4 mt-3 mb-3">Junior</div>
+            <div class="text-success">
+              <h5 class="card-title mt-3 mb-3">Tienen un descuento</h5>
+              <p class="card-text fs-5 mt-3 mb-3">15%</p>
+            </div>
+            <div class="bg-transparent mt-3 mb-3">* presentar documentación</div>
+          </div>
+        </div>
+      </div>
+      <!--Formulario-->
+  <form class="container-fluid" id="formulario">
+    <div class="div_form mt-3">
+      <p class="text-uppercase mt-3 mb-3" id="p1">Venta</p>
+      <h1 class="text-uppercase mt-3 mb-3">Valor de ticket 200$</h1>
+    </div>
+    <div class="row justify-content-center">
+      <div class="mt-3 mb-3 col-lg-3 col-5">
+        <input type="name" class="form-control" id="" placeholder="Nombre" required>
+      </div>
+      <div class="mt-3 mb-3 col-lg-3 col-5">
+        <input type="lastName" class="form-control" id="" placeholder="Apellido" required>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="mt-3 mb-3 col-lg-6 col-10">
+        <input type="email" class="form-control" id="" placeholder="Correo" required>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="mb-3 col-lg-3 col-5">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" id="cantidad" min="1" required >
+      </div>
+      <div class="mb-3 col-lg-3 col-5">
+        <label for="seleccion" class="form-label">Categoria</label>
+        <select id="inputSeleccion" class="form-select" required onchange="seleccionarCategoria(this.value)">
+          <option value="" selected></option>
+          <option value="Estudiante">Estudiante</option>
+          <option value="Trainee">Trainee</option>
+          <option value="Junior">Junior</option>
+        </select>
+        </select>
+      </div>
+    </div>
+    <div class="row  justify-content-center">
+    <div class="form-floating mb-3 justify-content-center col-lg-6 col-10">
+      <input  class="form-control" id="floatingInputDisabled" placeholder="" disabled>
+      <label class="ms-3" id="res" for="floatingInputDisabled">Total a Pagar: $</label>
+    </div></div>
+    <div class="row justify-content-center " >
+      <button type="button" onclick="resetearFormulario()" class="boton_form btn col-lg-3 col-5 mb-3 me-2">Borrar</button>
+      <button type="button" onclick="calcular()" class="boton_form btn col-lg-3 col-5 mb-3 ms-2">Resumen</button>
+      </form>
+    </div>
+  
+      <footer class="footer container-fluid">
+        <div class="footer_div row justify-content-center ">
+          <div class="col-lg-9 col-12 d-flex justify-content-around flex-wrap mt-1 pt-4 mb-1 pb-4">
+            <a href="#" class="col-lg-1 col-3 text-center align-self-center">Preguntas frecuentes</a>
+            <a href="#" class="col-lg-1 col-3 text-center align-self-center">Contáctanos</a>
+            <a href="#" class="col-lg-1 col-3 text-center align-self-center">Prensa</a>
+            <a href="#" class="col-lg-1 col-3 text-center align-self-center">Conferencias</a>
+            <a href="#" class="col-lg-1 col-3 mt-2 mt-lg-0 text-center align-self-center">Términos y condiciones</a>
+            <a href="#" class="col-lg-1 col-3 mt-2 mt-lg-0 text-center align-self-center">Privacidad</a>
+            <a href="#" class="col-lg-1 col-3 mt-2 mt-lg-0 text-center align-self-center">Estudiantes</a>
+          </div>
+        </div>
+      </footer>
+      <!--Bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <style>
+        .card:hover {
+          background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+          cursor: pointer; /* Cambia el cursor al pasar el mouse */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el mouse */
+        }
+
+        .selected {
+    background-color: #ffffcc; /* Cambia el fondo al color deseado */
+    border: 2px solid #ffcc00; /* Cambia el borde al color deseado */
+  }
+        </style>
+<script src="tickets.js"></script>
+        </body>
+        </html>
