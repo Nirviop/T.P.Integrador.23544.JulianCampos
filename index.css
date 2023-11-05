@@ -77,17 +77,8 @@ li{
   font-size: 1.6em;
 }
 
-.boton2{
-  font-size: 1.6em;
-  background-color: #29a744;
-}
-
-.boton3{
-  font-size: 1em;
-}
-
 .boton4{
-  font-size: 1em;
+  font-size: 1.6em;
   background-color: #29a744;
 }
 
@@ -141,6 +132,14 @@ div.carousel-inner div.carousel-item::before {
 .carousel-caption p{
   text-align: right; 
   font-size: 1.5em
+}
+
+.carousel-control-next{
+  width: 10%;
+}
+
+.carousel-control-prev{
+  width: 10%;
 }
 
 /*Articulo los Oradores */
