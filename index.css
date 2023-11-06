@@ -63,7 +63,7 @@ li{
   'opsz' 48; 
 }
 
-/* Seccion Conf Buenoss Airess */
+/* SECCION CONF BS AS */
 .section {
   --opacidad-negro: 0.5;
   background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)))
@@ -120,6 +120,10 @@ div.carousel-inner div.carousel-item::before {
   text-align: center;
 }
 
+.card {
+  min-width: 200px;
+}
+
 @media (max-width: 992px) {
   .carousel-caption {
     width: 41%;
@@ -142,7 +146,7 @@ div.carousel-inner div.carousel-item::before {
   width: 10%;
 }
 
-/*Articulo los Oradores */
+/*ARTICULOS LOS ORADORES */
 
 #div_titulo{
   text-align: center;
@@ -169,7 +173,7 @@ div.carousel-inner div.carousel-item::before {
   padding: 0.5em;
 }
 
-/* Bs As Octubre */
+/* BS AS OCTUBRE */
 .imagen_2 {
   width: 100%;
   max-height: 550px;
@@ -187,7 +191,7 @@ display: none;
 } 
 }
 
-/* Formulario */
+/* FORMULARIO*/
 .div_form{
   text-align: center;
 }
@@ -200,8 +204,12 @@ display: none;
   font-size:1.3em;
 }
 
-.boton_form{
+#boton3{
   font-size: 2em;
+}
+
+.boton_form{
+  
   background-color: #96c93e;
   color: white;
 }
@@ -211,7 +219,7 @@ display: none;
   color: white;
 }
 
-/* Footer */
+/* FOOTER */
 .footer{
   background: linear-gradient(to right, #1c3949, #1d4f6a);
 }
@@ -231,4 +239,15 @@ footer a{
   }
 }
 
+/*TICKETS*/
 
+.descuento:hover {
+  background-color: #f0f0f0;
+  cursor: pointer; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.selected {
+  background-color: #ffffcc;
+  border: 2px solid #ffcc00; 
+}

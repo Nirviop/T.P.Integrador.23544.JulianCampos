@@ -19,16 +19,16 @@ function seleccionarCategoria(categoria) {
   }
 
   /*----------------------------------Funcion Calcular precio al clickear y devolver resultado----------*/
-    function getValorById(id) {
-      return document.getElementById(id).value;
+function getValorById(id) {
+  return document.getElementById(id).value;
     }
   
-    function calcular() {
-      let seleccion = getValorById('inputSeleccion');
-      let cantidad = parseFloat(getValorById('cantidad')); // Parsea la cantidad como número
-      let res = 0;
-      let resPorcentaje = 0
-     if (cantidad > 0 && seleccion !== '') {
+function calcular() {
+  let seleccion = getValorById('inputSeleccion');
+  let cantidad = parseFloat(getValorById('cantidad')); // Parsea la cantidad como número
+  let res = 0;
+  let resPorcentaje = 0
+    if (cantidad > 0 && seleccion !== '') {
         switch (seleccion)  {
         case 'Estudiante': 
         res = cantidad * 200;
@@ -56,8 +56,8 @@ function seleccionarCategoria(categoria) {
       actualizarContenido('res', 'Total a pagar: $' + res); // Agrega el símbolo de dólar al resultado
     }
   
-    function actualizarContenido(id, nuevoContenido) {
-      document.getElementById(id).textContent = nuevoContenido; // Usa textContent para establecer el texto
+function actualizarContenido(id, nuevoContenido) {
+  document.getElementById(id).textContent = nuevoContenido; // Usa textContent para establecer el texto
     }
   
     /*-------------------Boton borrar seleccion y form-----------*/
